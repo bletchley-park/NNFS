@@ -16,7 +16,7 @@ double dot(Row u, Row v){
     }
 
     return sum;
-}
+} 
 
 Matrix transpose(Matrix a){
     int rowSize = a.size();

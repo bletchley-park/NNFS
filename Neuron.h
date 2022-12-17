@@ -3,7 +3,7 @@
 using namespace std;
 
 #ifndef _NEURON
-#define _NEURON
+#define _NEURON 
 
 
 class Neuron{
@@ -25,6 +25,8 @@ public:
 
     
     friend ostream& operator << (ostream& os, const Neuron& neuron);
+
+    ~Neuron();
 };
 
 

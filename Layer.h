@@ -5,7 +5,7 @@ using namespace std;
 
 #ifndef _LAYER
 #define _LAYER
-
+ 
 
 class Layer{
 public:
@@ -17,6 +17,8 @@ public:
     Layer(vector<Neuron> neurons) : neurons(neurons), dimension(neurons.size()) {}
 
     friend ostream& operator << (ostream& os, const Layer& layer);
+
+    ~Layer();
 };
 
 

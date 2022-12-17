@@ -26,3 +26,8 @@ ostream& operator << (ostream& os, const Neuron& neuron){
 
     return os;
 }
+
+Neuron::~Neuron(){
+    this->inputs.clear();
+    this->weights.clear();
+}

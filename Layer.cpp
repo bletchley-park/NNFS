@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include "Layer.h"
 using namespace std;
-
+ 
 ostream& operator << (ostream& os, const Layer& layer){
     os << "[";
     if(layer.neurons.empty()){
@@ -16,4 +16,8 @@ ostream& operator << (ostream& os, const Layer& layer){
     os << "]";
 
     return os;
+}
+
+Layer::~Layer(){
+    this->neurons.clear();
 }
