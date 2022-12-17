@@ -1,15 +1,16 @@
 #include <bits/stdc++.h>
-#include "Neuron.hpp"
-using namespace std;
+#include "Neuron.h"
+//#include "GloDec.cpp"
+//using namespace std;
 
-ostream& operator <<(ostream& os, const Neuron& neuron){
+ostream& operator << (ostream& os, const Neuron& neuron){
     os << "["; 
     os << "Weights : ";
 
     if(neuron.weights.empty()){
         os << "[]" << endl;
     }else{
-        cout << "[" << neuron.weights[0];
+        os << "[" << neuron.weights[0];
         for(int i = 1; i < neuron.weights.size(); i++){
             os << ", " << neuron.weights[i];
         }

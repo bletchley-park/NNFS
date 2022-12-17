@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include "GloDec.cpp"
-using namespace std;
+//using namespace std;
 
 #ifndef _NEURON
 #define _NEURON
@@ -23,7 +23,7 @@ public:
     Neuron(Row weights, double bias, afunc func) : weights(weights), bias(bias), activationFunction(func) {}
 
     
-    friend ostream& operator <<(ostream& os, const Neuron& neuron);
+    friend ostream& operator << (ostream& os, const Neuron& neuron);
 };
 
 

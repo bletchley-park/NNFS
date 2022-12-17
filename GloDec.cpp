@@ -18,14 +18,21 @@ double dot(Row u, Row v){
     return sum;
 }
 
-// Matrix transpose(Matrix a){
-//     int rowSize = a.size();
-//     int colSize = a[0].size();
+Matrix transpose(Matrix a){
+    int rowSize = a.size();
+    int colSize = a[0].size();
 
-//     Matrix t;
+    Matrix t(colSize, Row (rowSize));
 
-//     for()
-// }
+    for(int i = 0; i < rowSize; i++){
+        for(int j = 0; j < colSize; j++){
+            t[i][j] = a[j][i];
+        }
+    }
+
+    return t;
+}
+
 
 
 
