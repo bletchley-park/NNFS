@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #include "Layer.h"
-//using namespace std;
+using namespace std;
 
 ostream& operator << (ostream& os, const Layer& layer){
     os << "[";
@@ -11,7 +11,7 @@ ostream& operator << (ostream& os, const Layer& layer){
         for(int i = 1; i < layer.neurons.size(); i++){
             os << ", " << layer.neurons[i];
         }
-        os << "]" << endl;
+        os << "]";
     }
     os << "]";
 

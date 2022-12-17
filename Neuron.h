@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 #include "GloDec.cpp"
-//using namespace std;
+using namespace std;
 
 #ifndef _NEURON
 #define _NEURON
+
 
 class Neuron{
 public:

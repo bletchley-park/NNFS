@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
+//#include "Neuron.h"
 #include "Layer.cpp"
-// using namespace std;
+using namespace std;
 
 int main(){
     Neuron n({1,2,3});
@@ -8,8 +9,7 @@ int main(){
     l.neurons.push_back(n);
 
     cout << n << '\n';
-    //cout << l << '\n';
     cout << l << '\n';
-
+    
     return 0;
 }

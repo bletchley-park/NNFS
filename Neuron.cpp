@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 #include "Neuron.h"
 //#include "GloDec.cpp"
-//using namespace std;
-
+using namespace std;
+ 
 ostream& operator << (ostream& os, const Neuron& neuron){
     os << "["; 
     os << "Weights : ";

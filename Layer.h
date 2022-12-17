@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
-#include "Neuron.h"
+#include "Neuron.cpp"
 // #include "GloDec.cpp"
-//using namespace std;
+using namespace std;
 
 #ifndef _LAYER
 #define _LAYER
+
 
 class Layer{
 public:
@@ -15,7 +16,7 @@ public:
     Layer(int n) : dimension(n), neurons(vector<Neuron> (n)) {}
     Layer(vector<Neuron> neurons) : neurons(neurons), dimension(neurons.size()) {}
 
-    friend ostream& operator << (ostream& os, const Layer layer);
+    friend ostream& operator << (ostream& os, const Layer& layer);
 };
 
 
