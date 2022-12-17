@@ -33,9 +33,6 @@ Matrix transpose(Matrix a){
     return t;
 }
 
-
-
-
 double ReLU(double x){
     return max(0.0, x);
 }
