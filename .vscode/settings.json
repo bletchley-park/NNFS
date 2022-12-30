@@ -35,6 +35,7 @@
   "files.associations": {
     "iosfwd": "cpp",
     "iostream": "cpp",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "stdexcept": "cpp"
   }
 }

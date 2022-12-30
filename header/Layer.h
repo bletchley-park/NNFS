@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "Neuron.cpp"
+#include "Neuron.h"
 // #include "GloDec.cpp"
 using namespace std;
 
@@ -8,13 +8,21 @@ using namespace std;
  
 
 class Layer{
-public:
+private:
     int dimension;
     vector<Neuron> neurons;
+
+public:
 
     Layer() : neurons({}), dimension(0) {}
     Layer(int n) : dimension(n), neurons(vector<Neuron> (n)) {}
     Layer(vector<Neuron> neurons) : neurons(neurons), dimension(neurons.size()) {}
+
+    int getDimension();
+    const vector<Neuron> getNeurons();
+
+    void insertNeuron(Neuron neuron);
+    
 
     friend ostream& operator << (ostream& os, const Layer& layer);
 
