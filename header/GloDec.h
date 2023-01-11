@@ -39,6 +39,8 @@ double ReLU(double x);
 
 double sigmoid(double x);
 
+double deltaSigmoid(double x);
+
 typedef double (*afunc)(double x);
 
 double errFunc(const Row x, const Row y, Row w);

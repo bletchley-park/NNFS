@@ -3,6 +3,26 @@
 //#include "GloDec.cpp"
 using namespace std;
 
+const Row& Neuron::getWeights(){
+    return this->weights;
+}
+const afunc Neuron::getActivation(){
+    return this->activationFunction;
+}
+const double& Neuron::getBias(){
+    return this->bias;
+}
+
+void Neuron::setWeights(Row weights){
+    this->weights = weights;
+}
+void Neuron::setActivation(afunc activationFunction){
+    this->activationFunction = activationFunction;
+}
+void Neuron::setBias(double bias){
+    this->bias = bias;
+}
+
 double Neuron::evaluate(Row input){
     double ans;
 

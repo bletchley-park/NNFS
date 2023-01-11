@@ -18,11 +18,15 @@ public:
     Layer(int n) : dimension(n), neurons(vector<Neuron> (n)) {}
     Layer(vector<Neuron> neurons) : neurons(neurons), dimension(neurons.size()) {}
 
-    int getDimension();
-    const vector<Neuron> getNeurons();
+    const int& getDimension();
+    const vector<Neuron>& getNeurons();
+
+    void setDimension(int dimension);
+    void setNeurons(vector<Neuron> neurons);
 
     void insertNeuron(Neuron neuron);
-    
+
+    void setActivation(afunc func);
 
     friend ostream& operator << (ostream& os, const Layer& layer);
 

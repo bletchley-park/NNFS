@@ -23,6 +23,14 @@ public:
     Neuron(Row weights, afunc func) : weights(weights), bias(0), activationFunction(func) {}
     Neuron(Row weights, double bias, afunc func) : weights(weights), bias(bias), activationFunction(func) {}
 
+    const Row& getWeights();
+    const afunc getActivation();
+    const double& getBias();
+
+    void setWeights(Row weights);
+    void setActivation(afunc activationFunction);
+    void setBias(double bias);
+    
     double evaluate(Row input);
 
     friend ostream& operator << (ostream& os, const Neuron& neuron);

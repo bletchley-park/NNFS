@@ -49,7 +49,7 @@ Matrix transpose(Matrix a){
 
     for(int i = 0; i < rowSize; i++){
         for(int j = 0; j < colSize; j++){
-            t[i][j] = a[j][i];
+            t[j][i] = a[i][j];
         }
     }
 
@@ -217,6 +217,10 @@ double sigmoid(double x){
     return 1/(1-exp(-x));
 }
 
+double deltaSigmoid(double x){
+    return sigmoid(x) * (1 - sigmoid(x));
+}
+
 double errFunc(Row x, Row y, Row w){
     Matrix W = transpose({w});
     Matrix X = {x};
@@ -226,8 +230,8 @@ double errFunc(Row x, Row y, Row w){
     return (0.5/x.size()) * dot(h[0], h[0]);
 }
 
-Row gradientDescent(const Row x, const Row y, Row w, double learningRate = 0.01, int epochs = 500){
-    for(int i = 0; i < epochs; i++){
+// Row gradientDescent(const Row x, const Row y, Row w, double learningRate = 0.01, int epochs = 500){
+//     for(int i = 0; i < epochs; i++){
         
-    }
-}
+//     }
+// }
